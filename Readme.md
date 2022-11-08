@@ -8,6 +8,4 @@
 
 
 ## Блок-схема решения задачи:
-![image](https://disk.yandex.ru/i/efG2FCFnAi7L4A)
-
-
+[Ссылка на блок-схему](https://disk.yandex.ru/i/efG2FCFnAi7L4A)
