@@ -6,21 +6,23 @@
     string[] symbols2 = new string[symbols.Length];
     
     Console.WriteLine($"Введите набор символов {size} раз через Enter, без пробелов");
+
     FillArray(symbols);
     PrintArray(symbols);
     ArrayFilter(symbols, symbols2);
     PrintArray(symbols2); 
+    
     void ArrayFilter(string[] symbols, string[] symbols2)
 {
     int count = 0;
-    for (int i = 0; i < symbols.Length; i++)
-    {
-    if(symbols[i].Length <= 3)
+        for (int i = 0; i < symbols.Length; i++)
         {
-        symbols2[count] = symbols[i];
-        count++;
+            if(symbols[i].Length <= 3)
+            {
+            symbols2[count] = symbols[i];
+            count++;
+            }
         }
-    }
 }
 
    void FillArray(string [] symbols)
@@ -30,8 +32,6 @@
         symbols[i] = Console.ReadLine();
     }
 }
-
-   
 
 
 void PrintArray(string[]symbols)
